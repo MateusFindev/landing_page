@@ -1,4 +1,4 @@
-import "../styles/utility.css"
+import "../../styles/utility.css"
 
 export default function Home()  {
     return (
