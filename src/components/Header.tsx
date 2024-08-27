@@ -1,17 +1,20 @@
 //import Logo from "../../assets/logo.svg";
 import { useState } from "react";
-import "../../styles/header.css";
-import "../../styles/utility.css";
-import Button from "../components/Button";
+import "../styles/utility.css"
+import "../styles/header.css"
+import Button from "./Button";
+import Logo from "../assets/logo-light.svg";
+import Close from "../assets/close_icon.svg";
+import Menu from "../assets/menu_icon.svg"
 
-export default function Home() {
+export default function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 
     return (
         <>
             <header className="container py-sm">
                 <nav className="flex items-center justify-between">
-                    {/* <img src={Logo} alt="Logo DonaFrost" width={220} height={80} /> */}
+                    <img src={Logo} alt="Logo KM Fácil" width={220} height={80} /> 
 
                     <div className="desktop-only">
                         <ul className="flex gap-1">
@@ -61,21 +64,25 @@ export default function Home() {
                                         <li>
                                             <a href="#contact">Contato</a>
                                         </li>
+                                        <li>
+                                            <a className="reverse-color" href="#">Login</a>
+                                        </li>
+
                                     </ul>
                                     <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper">
-                                        {/* <img src={Close} alt="ícone fechar menu" width={24} height={24} /> */}
+                                        <img src={Close} alt="ícone fechar menu" width={24} height={24} />
                                     </span>
                                 </div>
                             </div>
                             :
                             <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper" >
-                                {/* <img src={Menu} alt="ícone menu" width={24} height={24} /> */}
+                                <img src={Menu} alt="ícone menu" width={24} height={24} />
                             </span>
                         }
                     </div>
 
 
-                </nav>//Essa tag nav fecha lá em baixo com o header
+                </nav>
             </header>
         </>
     )

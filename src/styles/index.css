@@ -23,7 +23,7 @@
 
     --ff-sans: "Montserrat", system-ui, sans-serif;
     --fw-base: 400;
-    --fw-md: 50;
+    --fw-md: 500;
     --fw-bold: 800;
     
 
@@ -77,7 +77,7 @@ h3 {
 a {
     text-decoration: none;
     color: var(--second-text-color);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-md);
     font-size: var(--fs-sm);
 }
 
