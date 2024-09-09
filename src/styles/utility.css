@@ -50,7 +50,9 @@
 .btn-wrapper {
     cursor: pointer;
     padding: 2px;
+    
 }
+
 
 .container {
     --max-width: 680px;
@@ -72,3 +74,4 @@
         grid-auto-columns: 1fr;
     }
 }
+
