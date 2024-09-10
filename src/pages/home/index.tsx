@@ -5,6 +5,7 @@ import Card from "../../components/Card"
 import HeroRectangleOne from "../../assets/rectangleOne.png"
 import HeroRectangleTwo from "../../assets/rectangleTwo.png"
 import "../../styles/hero.css"
+import "../../styles/solution.css"
 
 export default function Home() {
     return (
@@ -40,7 +41,7 @@ export default function Home() {
                         <p>Inovação é com a gente! O KM Fácil já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.</p>
                     </div>
 
-                    <div className="solution-content">
+                    <div className="even-columns">
                             <Card 
                                 urlIcon="src\assets\award 1.svg"
                                 title="Produto Vencedor"

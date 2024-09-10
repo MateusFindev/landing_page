@@ -1,4 +1,4 @@
-#solution > .solution-title {
+#solution .solution-title {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     gap: 1rem;
 }
 
-#solution > .solution-content {
+#solution .solution-content {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
