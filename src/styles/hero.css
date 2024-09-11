@@ -24,7 +24,11 @@
     flex-direction: column;
     margin-top: auto;
     text-align: center;
-    gap: 1.75rem;
+    gap: 1.75rem; 
+}
+
+#hero .content p {
+    font-weight: var(--fw-base);
 }
 
 #hero .content > div {
@@ -51,6 +55,8 @@
         .content p {
             width: 80%;
             align-self: center;
+            font-size: var(--fs-lg);
+            font-weight: var(--fw-base);
         }
 
         .content {
@@ -59,20 +65,15 @@
         
         .content > div :first-child {
             width: 10.625rem;
-        }
-
-        .content p {
-            width: 80%;
-            align-self: center;
+            
         }
         
         .content p:first-of-type {
             color: var(--primary-color);
             font-weight: var(--fw-bold);
+            font-size: var(--fs-base);
         }
     
 
     }
 }
-        
-

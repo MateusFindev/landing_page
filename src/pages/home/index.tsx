@@ -34,14 +34,14 @@ export default function Home() {
             </section>
 
             <section id="solution">
-                <div className="container content">
+                <div className="container">
                     <div className="solution-title">
                         <p className="desktop-only">Soluções</p>
                         <h2>Sob medida para você!</h2>
-                        <p>Inovação é com a gente! O KM Fácil já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.</p>
+                        <p>Inovação é com a gente! O <span>KM Fácil</span> já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.</p>
                     </div>
 
-                    <div className="even-columns">
+                    <div className="solution-content">
                             <Card 
                                 urlIcon="src\assets\award 1.svg"
                                 title="Produto Vencedor"
@@ -64,8 +64,6 @@ export default function Home() {
                             />
 
                     </div>
-
-
                 </div>
             </section>
 
