@@ -19,9 +19,9 @@ export default function Home() {
                 <img src={HeroRectangleOne} alt="Retângulo um" />
 
                 <div className="container content">
-                    <p className="desktop-only">Olá</p>
-                    <h1>Comida de mãe direto no seu apê, é só pedir que entregamos para você!</h1>
-                    <p>Já pensou em matar a saudade daquela comida caseira? O melhor de tudo, nossas receitas são 100% saudáveis, bora entrar no shape.</p>
+                    <p className="desktop-only">Seja bem vindo!</p>
+                    <h1>Remuneração Variável ficou fácil e rápido de calcular!</h1>
+                    <p>Gerencie facilmente sua remuneração variável com cálculos automáticos para comissões, bonificações e prêmios personalizados.</p>
                     
                     <div className="flex gap-1">
                         <span><Button text="Cadastre-se" /></span>
@@ -43,33 +43,29 @@ export default function Home() {
 
                     <div className="solution-content">
                             <Card 
-                                urlIcon="src\assets\award 1.svg"
-                                title="Produto Vencedor"
-                                text="Ideia matadora, nosso time já ganhou diversos eventos de inovação com nosso produto, entre eles podemos citar o CityFarm da FAG e Startup Garage."
+                                urlIcon="src/assets/zap.svg"
+                                title="Flexibilidade"
+                                text="Adapte facilmente o sistema a diferentes regras de remuneração, atendendo a qualquer modelo de negócios."
                             />
 
  
                             <Card 
-                                urlIcon="src\assets\award 1.svg"
-                                title="Produto Vencedor"
-                                text="Ideia matadora, nosso time já ganhou diversos eventos de inovação com nosso produto, entre eles podemos citar o CityFarm da FAG e Startup Garage."
+                                urlIcon="src/assets/file-text.svg"
+                                title="Relatórios Detalhados"
+                                text="Gere relatórios personalizados com métricas de desempenho, facilitando o acompanhamento dos resultados."
                             />
 
                         
 
                             <Card 
-                                urlIcon="src\assets\award 1.svg"
-                                title="Produto Vencedor"
-                                text="Ideia matadora, nosso time já ganhou diversos eventos de inovação com nosso produto, entre eles podemos citar o CityFarm da FAG e Startup Garage."
+                                urlIcon="src/assets/cpu.svg"
+                                title="Automação"
+                                text="Calcule comissões e prêmios automaticamente, economizando tempo e eliminando erros manuais."
                             />
 
                     </div>
                 </div>
             </section>
-
-            
-            
-
         </>
     )
 }

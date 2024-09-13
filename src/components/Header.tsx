@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "../styles/utility.css"
 import "../styles/header.css"
 import Button from "./Button";
-import Logo from "../assets/logo-light.svg";
+import Logo from "../assets/logo2.svg";
 import Close from "../assets/close_icon.svg";
 import Menu from "../assets/menu_icon.svg"
 

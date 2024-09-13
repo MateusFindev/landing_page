@@ -17,6 +17,10 @@
     transition: 0.3s;
     
 }
+.card img {
+    height: 50px;
+    width: 50px;
+}
 
 .card:hover {
     transform: translateY(-10px);
