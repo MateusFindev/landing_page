@@ -4,6 +4,9 @@ import Button from "../../components/Button"
 import Card from "../../components/Card"
 import HeroRectangleOne from "../../assets/rectangleOne.png"
 import HeroRectangleTwo from "../../assets/rectangleTwo.png"
+import IconAutomate from "../../assets/cpu.svg"
+import IconReport from "../../assets/file-text.svg"
+import IconFlex from "../../assets/zap.svg"
 import "../../styles/hero.css"
 import "../../styles/solution.css"
 
@@ -43,14 +46,14 @@ export default function Home() {
 
                     <div className="solution-content">
                             <Card 
-                                urlIcon="src/assets/zap.svg"
+                                urlIcon={IconFlex}
                                 title="Flexibilidade"
                                 text="Adapte facilmente o sistema a diferentes regras de remuneração, atendendo a qualquer modelo de negócios."
                             />
 
  
                             <Card 
-                                urlIcon="src/assets/file-text.svg"
+                                urlIcon={IconReport}
                                 title="Relatórios Detalhados"
                                 text="Gere relatórios personalizados com métricas de desempenho, facilitando o acompanhamento dos resultados."
                             />
@@ -58,7 +61,7 @@ export default function Home() {
                         
 
                             <Card 
-                                urlIcon="src/assets/cpu.svg"
+                                urlIcon={IconAutomate}
                                 title="Automação"
                                 text="Calcule comissões e prêmios automaticamente, economizando tempo e eliminando erros manuais."
                             />
