@@ -1,5 +1,5 @@
 //import Logo from "../../assets/logo.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles/utility.css"
 import "../styles/header.css"
 import Button from "./Button";
@@ -9,6 +9,27 @@ import Menu from "../assets/menu_icon.svg"
 
 export default function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+    useEffect(() => {
+        const body = document.body;
+
+        if (showMobileMenu) {
+            body.style.overflow = 'hidden';
+            body.style.position = 'fixed';
+            body.style.width = "100%";
+        } else {
+            body.style.overflow = '';
+            body.style.position = '';
+            body.style.width = '';
+        }
+
+        return () => {
+            body.style.overflow = '';
+            body.style.position = '';
+            body.style.width = '';
+        };
+    }, [showMobileMenu]);
+
 
     return (
         <>
