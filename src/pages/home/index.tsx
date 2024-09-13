@@ -13,7 +13,7 @@ export default function Home() {
             <Header />
 
             <section id="hero">
-                <span className="desktop-only">
+                <span className="desktop-only">x
                     <img src={HeroRectangleTwo} alt="Retângulo dois" />
                 </span>
                 <img src={HeroRectangleOne} alt="Retângulo um" />
@@ -38,7 +38,7 @@ export default function Home() {
                     <div className="solution-title">
                         <p className="desktop-only">Soluções</p>
                         <h2>Sob medida para você!</h2>
-                        <p>Inovação é com a gente! O <span>KM Fácil</span> já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.</p>
+                        <p>Inovação é com a gente! A <span>Remunera</span> já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.</p>
                     </div>
 
                     <div className="solution-content">
