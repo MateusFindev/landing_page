@@ -13,7 +13,7 @@ export default function Home() {
             <Header />
 
             <section id="hero">
-                <span className="desktop-only">x
+                <span className="desktop-only">
                     <img src={HeroRectangleTwo} alt="Retângulo dois" />
                 </span>
                 <img src={HeroRectangleOne} alt="Retângulo um" />
