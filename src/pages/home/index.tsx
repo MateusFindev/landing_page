@@ -7,8 +7,13 @@ import HeroRectangleTwo from "../../assets/rectangleTwo.png"
 import IconAutomate from "../../assets/cpu.svg"
 import IconReport from "../../assets/file-text.svg"
 import IconFlex from "../../assets/zap.svg"
+import ProfileImageOne from "../../assets/ProfileImageOne.png"
+import ProfileImageTwo from "../../assets/ProfileImageTwo.png"
+import ProfileImageThree from "../../assets/ProfileImageThree.png"
+import CardCarousel from "../../components/CardCarousel"
 import "../../styles/hero.css"
 import "../../styles/solution.css"
+import "../../styles/testimonials.css"
 
 export default function Home() {
     return (
@@ -51,14 +56,11 @@ export default function Home() {
                                 text="Adapte facilmente o sistema a diferentes regras de remuneração, atendendo a qualquer modelo de negócios."
                             />
 
- 
                             <Card 
                                 urlIcon={IconReport}
                                 title="Relatórios Detalhados"
                                 text="Gere relatórios personalizados com métricas de desempenho, facilitando o acompanhamento dos resultados."
                             />
-
-                        
 
                             <Card 
                                 urlIcon={IconAutomate}
@@ -68,6 +70,49 @@ export default function Home() {
 
                     </div>
                 </div>
+            </section>
+
+            <section id="testimonials">
+                <header>
+                    <span>
+                        <p className="desktop-only bold">
+                            Conselho de quem conhece
+                        </p>
+                        <h2>Cada cliente importa!</h2>
+                    </span>
+                    <p>
+                    Quem já pediu sabe da qualidade das nossas receitas, estamos tirando aquela ideia de que
+                    comida congelada tem de ser algo sem gosto, acompanhe abaixo os testemunhos de quem já comprou e aprovou.
+                    </p>
+                </header>
+
+                <section id="carousel">
+                    <div id="carousel-content">
+                        <CardCarousel
+                            comentary="Slate helps you see  how many more days you need to work to reach your financial goal for the month and year."
+                            urlProfileImage={ProfileImageOne}
+                            starCloseNumber= {4}
+                            nameCostumer="Pablo Vitar"
+                            ocupationCostumer="Bilionário e josé rico"
+                        />
+
+                        <CardCarousel
+                            comentary="Slate helps you see  how many more days you need to work to reach your financial goal for the month and year."
+                            urlProfileImage={ProfileImageTwo}
+                            starCloseNumber= {3}
+                            nameCostumer="Nhonho"
+                            ocupationCostumer="Agressor"
+                        />
+
+                        <CardCarousel
+                            comentary="Slate helps you see  how many more days you need to work to reach your financial goal for the month and year."
+                            urlProfileImage={ProfileImageThree}
+                            starCloseNumber= {2}
+                            nameCostumer="Boules"
+                            ocupationCostumer="Cheirador"
+                        />
+                    </div>
+                </section>
             </section>
         </>
     )

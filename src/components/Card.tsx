@@ -8,7 +8,7 @@ interface ICardProps {
 }
 
 export default function Card ( {title, text, urlIcon}: ICardProps) {
-
+    
     return (
         <div className="card">
             <img src={urlIcon} alt="Ícone da solução" />
