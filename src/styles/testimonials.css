@@ -1,6 +1,6 @@
 #testimonials {
-    height: 100vh;
-    background: var(--secondary-color);
+    min-height: 100vh;
+    background:var(--secondary-color);
     display: flex;
     flex-direction: column;
     padding-block: 4rem;
@@ -22,11 +22,20 @@
 
     p {
         color: var(--second-text-color);
+        font-weight: var(--fs-base);
     }
 
     .carousel {
         display: flex;
-        width: 80%;
+        width: 80%;    
+    
+        .carousel-content {
+            display: flex;
+            gap: 1.5rem;
+            padding-right: 1.5rem;
+            animation: swipe 30000ms linear infinite;
+
+        }
     }
 
     .carousel:hover {
@@ -36,13 +45,7 @@
         }
     }
 
-    .carousel-content {
-        display: flex;
-        gap: 1.5rem;
-        padding-right: 1.5rem;
-        animation: swipe 30000ms linear infinite;
-    }
-
+    
     .carousel-card {
         display: flex;
         flex-direction: column;
@@ -54,6 +57,7 @@
         padding: 1.625rem;
         text-align: center;
         gap: 1rem;
+            
 
         >img {
             width: 130px;
@@ -94,14 +98,14 @@
     #testimonials {
         gap: 5rem;
         align-items: center;
-
+        
         header p {
             width: 60%;
         }
 
         .carousel {
             overflow-x: hidden;
-            width: 50%;
+            width: 70%;
         }
 
         .testimony {
@@ -111,6 +115,7 @@
         .carousel-card {
             min-width: 30rem;
             min-height: 26.875rem;
+            
         }
     }
 }
