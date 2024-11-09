@@ -2,9 +2,10 @@
     background: var(--bg-color);
     display: flex;
     z-index: 1;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     min-height: 90vh;
+    
 
     p {
         color: var(--second-text-color);
@@ -52,7 +53,7 @@
     #solution {
         background: var(--light-gray);
         border-top: none;
-    
+        
         .solution-title p {
             width: 80%;
             align-self: center;
