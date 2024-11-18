@@ -61,7 +61,7 @@ export function Contact() {
     return (
         <section id="contact">
             <header>
-                <h2>Entre em contato</h2>
+                <h2>Entre em contato!</h2>
                 <span>
                     <span>Entre em contato, estamos dispostos a tirar qualquer dúvida</span>
                     <span className="desktop-only">, seja um orçamento, uma dúvida técnica de algum de nossos produtos. Estamos à disposição para responder</span>
