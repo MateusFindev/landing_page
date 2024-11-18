@@ -27,12 +27,12 @@ export function Contact() {
         setSuccessMessage('');
 
         try {
-            const response = await fetch('/api/function-3', {
+            const response = await fetch('/api/function-4', {
                 method: 'POST',
                 headers: {
                     'Access-Control-Allow-Origin': '*',
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFkYzBmMTcyZThkNmVmMzgyZDZkM2EyMzFmNmMxOTdkZDY4Y2U1ZWYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE2MjEwMzI4Njk3MjI0NzkxMzY2IiwiZW1haWwiOiJtYXRldXNmaW4xMUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6InJKdHFMZjVISkM4azJsdXYwWVRuZnciLCJuYmYiOjE3MzE5NjYwNDYsImlhdCI6MTczMTk2NjM0NiwiZXhwIjoxNzMxOTY5OTQ2LCJqdGkiOiJkYzI0YmM1Yzg3OGMzNGYzYjNhYzQ2MzZlMGQ2OWI3MDU2NTA0ODk3In0.s_HwXDADvuyFHCn_qNSVkiTlykCtE6RBfgcSULlOgiHEncQrSnULMebzg-a-J6tEOIs9TXoTYhQxha88GUn8NhTuZjSVluH-bh2M9ZyzhYGj1oBx4lbRyCXYb4CeB0NRqs-fqRMC-LzegWu9cYWi9W3NjpyudmS7iZ_kjvUh9iM3k0fchQ6WXmW0TGR8sa-nbvoGuh-ZNVYq1nGmAOcUp3Zl1316fLFIF90lk0jIfyALIkN3InQ4OCWFtXEm09MERQZR3-UiqUnOScJkYHRPT3Xc-_q5DG2_-EdDm5pVJMlLfmEPyi2xGRmYMOuyeHEhIrJxrENF_Tbv6lvv0W_P5w`,
+                    'Authorization': `Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFkYzBmMTcyZThkNmVmMzgyZDZkM2EyMzFmNmMxOTdkZDY4Y2U1ZWYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE2MjEwMzI4Njk3MjI0NzkxMzY2IiwiZW1haWwiOiJtYXRldXNmaW4xMUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6IjV0ajE1LTVvNV9mbnRsMXFaNEtSV3ciLCJuYmYiOjE3MzE5NjcxOTgsImlhdCI6MTczMTk2NzQ5OCwiZXhwIjoxNzMxOTcxMDk4LCJqdGkiOiIwNjNkMGFmNzA5OTczNmU4MDM3NGUwOWU1NDExNmRlZWVmNjI1YjViIn0.yvN9IyNHEYWoTu9MBHcZbOTmWYO6LF981wxuLY4f2HqynmJK4CbphpneSorHaLEdISgtkCA5DOg75jrT2HYsnX3oIWTjOqvJSrsAG7nR7CaSB72dttviraCnyZX3LZvyz-OxS8c-4wdxyPc0DrdWjl-iljqF-nrT4QRS-Ul956w_L5zhz2aC6CFMAnlh8Qly-Z6q3Dz9BSBG8k4BoyHzM0W3eSsmIv_NrnhKMAWJfFqOfs_uYVIif2IiSM7xLvhj2WOsySTgDGE9JkISr4MLVi7CDt7UkK9IlLWjpZsqGOA7ajV-cHLa0zSIubNdND7mlWtICUJw5JSb228Bk6doeQ`,
                 },
                 body: JSON.stringify({ toMail: email, content }),
             });
