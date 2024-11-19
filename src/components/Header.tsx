@@ -30,12 +30,16 @@ export default function Header() {
         };
     }, [showMobileMenu]);
 
+    const handleLinkClick = () => {
+        setShowMobileMenu(false);
+    };
+
 
     return (
         <>
             <header className="container py-sm">
                 <nav className="flex items-center justify-between">
-                    <img src={Logo} alt="Logo KM Fácil" width={220} height={80} /> 
+                    <img src={Logo} alt="Logo KM Fácil" width={220} height={80} />
 
                     <div className="desktop-only">
                         <ul className="flex gap-1">
@@ -71,22 +75,22 @@ export default function Header() {
                                 <div className="container flex">
                                     <ul>
                                         <li>
-                                            <a href="#">Home</a>
+                                            <a href="#" onClick={handleLinkClick}>Home</a>
                                         </li>
                                         <li>
-                                            <a href="#solution">Soluções</a>
+                                            <a href="#solution" onClick={handleLinkClick}>Soluções</a>
                                         </li>
                                         <li>
-                                            <a href="#testimonials">Depoimentos</a>
+                                            <a href="#testimonials" onClick={handleLinkClick}>Depoimentos</a>
                                         </li>
                                         <li>
-                                            <a href="#pricing">Preços</a>
+                                            <a href="#pricing" onClick={handleLinkClick}>Preços</a>
                                         </li>
                                         <li>
-                                            <a href="#contact">Contato</a>
+                                            <a href="#contact" onClick={handleLinkClick}>Contato</a>
                                         </li>
                                         <li>
-                                            <a className="reverse-color" href="#">Login</a>
+                                            <a className="reverse-color" href="#" onClick={handleLinkClick}>Login</a>
                                         </li>
 
                                     </ul>
